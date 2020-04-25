@@ -11,7 +11,6 @@ img {
 
 /* SLIDE */
 .slide-wrapper {
-  margin-top: 20px;
   overflow: hidden;
 }
 
@@ -92,4 +91,28 @@ img {
 [data-control="slide"] li.active-slide a {
   background: rgba(0,0,0,.6);
   color: white;
+}
+
+.custom-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.custom-controls div {
+  max-width: 50px;
+  margin: 20px;
+  cursor: pointer;
+  opacity: .8;
+  transform: scale(.8);
+  transition: .5s;
+}
+
+.custom-controls div.active-slide {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.custom-controls div img {
+  border-radius: 50%;
 }

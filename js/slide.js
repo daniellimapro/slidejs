@@ -162,7 +162,6 @@ export class Slide {
     this.slidesConfig();
     this.addResizeEvent();
     this.changeSlide(1);
-    this.addControl();
     return this;
   }
 }
