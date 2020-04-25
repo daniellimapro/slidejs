@@ -12,6 +12,7 @@ img {
 /* SLIDE */
 .slide {
   display: flex;
+  /* transition: .3s; */
 }
 
 .slide .slide-wrapper {
