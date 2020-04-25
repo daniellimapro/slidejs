@@ -12,6 +12,7 @@ img {
 /* SLIDE */
 .slide-wrapper {
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .slide {
@@ -20,10 +21,6 @@ img {
 
 .slide:hover {
   will-change: transform;
-}
-
-.slide .slide-wrapper {
-  overflow: hidden;
 }
 
 .slide .item {
