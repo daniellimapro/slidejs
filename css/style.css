@@ -33,7 +33,7 @@ img {
   transition: .4s;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  box-shadow: 0 2px 14px rgba(0,0,0,.2);
 }
 
 .slide .item.active-slide {
@@ -53,16 +53,43 @@ img {
 
 .controls button {
   border: none;
-  background: rgba(0,0,0,.2);
   color: rgba(0,0,0,.6);
-  padding: 5px 20px;
-  font-size: 15px;
+  padding: 5px;
+  font-size: 25px;
   border-radius: 2px;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .controls button:hover {
-  background-color: rgba(0,0,0,.6);
+  color: rgba(0,0,0,1);;
+}
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+[data-control="slide"] li {
+  list-style: none;
+}
+
+[data-control="slide"] li a {
+  text-decoration: none;
+  color: rgba(0,0,0,.6);
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 5px 10px;
+  margin: 6px;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+[data-control="slide"] li a:hover,
+[data-control="slide"] li.active-slide a {
+  background: rgba(0,0,0,.6);
   color: white;
 }
